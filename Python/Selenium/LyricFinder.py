@@ -1,9 +1,12 @@
+# This App finds lyrics using selenium and google
+# type in your favorite song and the name of the artist, and the script will pull that information from google
+# and display it on the console
+
 from selenium import webdriver
 from selenium.common import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-
 
 song_name = input("What is the name of the song?: ")
 band_name = input("What is the name of the band? (If you do not know leave blank): ")
