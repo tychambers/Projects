@@ -1,0 +1,36 @@
+# Below is an example of PostgreSQL syntax, similiar to sqlite
+
+import psycopg2
+
+conn = psycopg2.connect(host="localhost", dbname="testdb", user="postgres",
+                              password="Admin123!!!", port="5432")
+cur = conn.cursor()
+
+cur.execute("""CREATE TABLE IF NOT EXISTS person (
+    id INT PRIMARY KEY,
+    name VARCHAR(255),
+    age INT,
+    gender CHAR
+)
+""")
+
+# query for insert into table
+
+# cur.execute("""INSERT INTO person (id, name, age, gender) VALUES
+# (1, 'Mike', 30, 'm'),
+# (2, 'Dave', 29, 'm'),
+# (3, 'Lisa', 24, 'f'),
+# (4, 'Anna', 38, 'f'),
+# (5, 'Jeff', 40, 'm');
+# """)
+
+sql = cur.mogrify("""SELECT * FROM person WHERE starts_with(name, %s) AND age < %s;""", ("J", 50))
+
+cur.execute(sql)
+
+print(cur.fetchall())
+conn.commit()
+
+cur.close()
+conn.close()
+
