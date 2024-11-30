@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 140px 155px 1fr;
+      gap: 9px;
+      background-color: #000;
+      height: 758px;
+      width: 748px;
+      grid-auto-rows: 20px;
+    }
+    .red-box {
+      background-color: #E72F24;
+    }
+    .white-box1 {
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    .white-box2 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .white-box3 {
+      background-color: #F0F1EC;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .blue-box {
+      background-color: #004592;
+      border-bottom: solid #000 10px;
+    }
+    .white-box5 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .white-box6 {
+      background-color: #F0F1EC;
+    }
+    .yellow-box {
+      background-color: #F9D01E;
+    }
+    .grey-box {
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="center">
+    <div class="container">
+        <div class="red-box"></div>
+        <div class="white-box1"></div>
+        <div class="white-box2"></div>
+        <div class="white-box3"></div>
+        <div class="blue-box"></div>
+        <div class="white-box5"></div>
+        <div class="white-box6"></div>
+        <div class="yellow-box"></div>
+        <div class="grey-box"></div>
+          <!-- <div class="white-box"></div> -->
+          <!-- <div class="white-box"></div> -->
+        <!-- <div class="white-box"></div> -->
+    </div>
+  </div>
+</body>
+
+</html>
