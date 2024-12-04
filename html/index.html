@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Chambers</title>
+    <style>
+        /*
+        olive = #cbf078
+        beige = #f8f398
+        orange = #f1b963
+        red = e46161 
+        */
+        .container-0 {
+            background-color: #f1b963;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 600px;
+        }
+        .top-section {
+            background-color: #f1b963;
+            grid-column: span 3;
+            grid: flex;
+            justify-content: center;
+            padding-top: 10px;
+            max-width: 100%;
+        }
+        .top-section {
+            background-color: #f1b963;
+        }
+        .body {
+            background-color: #f8f398;
+        }
+        .western-background {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+        .cursive {
+            font-family: "Playwrite FR Moderne", cursive;
+            font-optical-sizing: auto;
+            font-weight: 100%;
+            display: flex;
+            color: #e46161;
+        }
+        .non-cursive {
+            font-family: "PT Sans Narrow", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #e46161;
+            display: flex;
+            justify-content: center;
+        }
+        .mid-title {
+            grid-column: span 2;
+        }
+        .container-2 {
+            background-color: #f8f398;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 50px 1fr;
+            justify-content: center;
+        }
+        .container-3 {
+            background-color: #f8f398;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50px 1 1fr 1fr;
+            gap: 10px
+        }
+        .mid-section {
+            display: flex;
+            justify-content: center;
+        }
+        .professional-photo {
+            padding-top: 10px;
+            border-radius: 50%;
+        }
+        .body-text {
+            font-family: "PT Sans Narrow", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #e46161;
+        }
+        .body-text-2 {
+            font-family: "PT Sans Narrow", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #e46161;
+        }
+        .resume-card {
+            background-color: #f1b963;
+            display: flex;
+            justify-content: center;
+        }
+        .img-1 {
+            display: flex;
+            justify-content: center;
+        }
+        .img-2 {
+            display: flex;
+            justify-content: center;
+        }
+        .container-examples {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 50px auto 1fr 1.5fr auto;
+            background-color:#f8f398;
+            color:#e46161
+        }
+        .example {
+            padding-left: 10px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .one {
+            grid-area: 1 / 2 / 1 / 3
+        }
+
+        .two {
+            grid-area: 2 / 2 / 2 / 3
+        }
+
+        .three {
+            grid-area: 3 / 2 / 3 / 3
+        }
+
+        .four {
+            grid-area: 4 / 2 / 4 / 3
+        }
+        .five {
+            grid-area: 5 / 2 / 5 / 3
+        }
+       
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-0">
+        <div class="top-section cursive">
+            <h1 style="padding-top: 10px;">I'm Tyler.</h1>
+        </div>
+        <div class="top-section non-cursive">
+            <h2>A Programmer and IT professional!</h2>
+        </div>
+        <div class="top-section">
+            <img src="western_landscape.png" class="western-background" />
+        </div>
+        <div class="top-section">
+        </div>
+        <div></div>
+    </div>
+    <div class="container-2">
+        <div class="mid-section"><img src="linkdin_image.jpg" class="professional-photo" /></div>
+        <div class="mid-section"><h2 class="non-cursive">Hello!</h2></div>
+        <div class="mid-section">
+            <p class="body-text">
+                My name is Tyler. <br>
+                I am a Web-Developer and IT Professional. <br>
+                I have been working with Python and Javascript to build websites, and other apps. <br>
+                Additionally, I have experience working in IT supporting software. <br>
+                Currently, I work at Fortra supporting an FTP software. <br>
+                I write scripts in Powershell and Python, and provide resolutions to people's IT queries here.
+            </p></div>
+    </div>
+    <div class="container-3">
+        <div class="mid-title"><h2 class="non-cursive">My Skills</h2></div>
+        <div class="img-1"><img src="typing.gif" /></div>
+        <div class="body-text-2">
+            <h3 class="new-color">Development & Design:</h3>
+            <ul>
+                <li>Full Stack Web</li>
+                <li>Scripting</li>
+                <li>GUI-apps</li>
+                <li>AI</li>                
+            </ul>
+        </div>
+        <div class="img-2"><img src="cat-guitar.gif" class="img-2"/></div>
+        <div class="body-text-2">
+            <h3>Technologies:</h3>
+            <ul>
+                <li>Languages: Python, Javascript, C++, HTML, CSS, Powershell</li>
+                <li>Docker for containerization</li>
+            </ul>
+            <h3>Hobbies & Interests:</h3>
+            <ul>
+                <li>Guitar Player</li>
+                <li>Video Gamer</li>
+                <li>Nature Enthusiast</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="resume-card" style="background-color: #f8f398; padding: 20px;">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body" style="background-color:#e46161">
+            <h3 class="card-title body-text" style="color: #cbf078;">Resume </h3>
+            <p class="card-text" style="color: #cbf078">Click below to access my resume!</p>
+            <a href="resume.html" class="btn btn-success" style="color: #cbf078">Go To Resume</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-examples">
+        <div class="example one">
+            <h3 style="text-align: center;">Example Projects</h3>
+        </div>
+        <div class="example two">
+            <h3 class="title">Django Project Site</h3>
+            <p>Click the button to see the site that I built using the Django Framework in Python.
+                There are several interactive apps that use API's online to get information, as well as account creation, etc.
+                A link to the source code can be found here: <a href="https://github.com/tychambers/website">Source Code</a>
+            </p>
+            <a href="https://tychambers.pythonanywhere.com/" class="btn btn-success" style="color:#cbf078">Go to Site</a>
+            <br>
+        </div>
+        <div class="example three">
+            <h3 class="title">FTP Client</h3>
+            <p>
+                Below is a link to the source code for a File Transfer Client that I made. The client uses FTP and SFTP to transfer files to a server.
+                It has an interactive screen that displays the files on the remote server and local server. It has backend logging to a SQL database that keeps track of transfers.
+                It also has a detailed logging system that keeps track of any errors with the transfers. The app was created in Python using Tkinter for the GUI, and there are several forms of authentication used, including: password, key authentication.
+            </p>
+            <a href="https://github.com/tychambers/Monster_FTP" class="btn btn-success" style="color:#cbf078">Go to Repository</a>
+            <br>
+        </div>
+        <div class="example four">
+            <h3 class="title">Flask Movie API Site</h3>
+            <p>
+                Below is a link to the repository for the source code of a website I built. The website uses Python's Flask as a framework for the site.
+                The site has an authentication system which lets you create an account and login. After logging in you are given a key to use the API. The API has a database of 10,000+ movies which I imported from a dataset at kaggle.com.
+                I used jupyter notebooks and pandas library to format the data and import it into the site's database. The API then queries the database to retrieve the results. I also used the website to show documentation on how to use API.
+                There are 2 main queries: get information about a movie from a name input, and get the movies that an actor is in through using the actor's name as an input. I also created a DockerFile for the project so it can easily be containerized.
+            </p>
+            <a href="https://github.com/tychambers/FlaskMovieAPISite" class="btn btn-success" style="color:#cbf078">Go to Repository</a>
+        </div>
+        <div class="example five">
+            <br>
+            <br>
+            <p style="padding: 10px;">Additional projects can be found <a href="https://github.com/tychambers">here</a> on my github.</p>
+        </div>
+    </div>
+
+    <div class="resume-card" style="background-color: #f8f398; padding: 20px;">
+        <div class="card" style="width: 20rem;">
+            <div class="card-body" style="background-color:#e46161">
+            <h3 class="card-title body-text" style="color: #cbf078;">Contact Me!</h3>
+            <p class="card-text" style="color: #cbf078">Phone: (404) 889-5777 <br> Email: tylerm.chambers92@gmail.com</p>
+            <a href="resume.html" class="btn btn-success" style="color: #cbf078">Email Me</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>
